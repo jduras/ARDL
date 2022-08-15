@@ -147,11 +147,11 @@ parse_formula <- function(formula, colnames_data) {
 
     # check for correct function inputs
     # check if variables exist
-    if (sum(!(c(z_part$var, fixed_part$var) %in% colnames_data)) >= 1) {
-        stop(c("Variable(s) ",
-                   paste0("'", c(z_part$var, fixed_part$var)[!(c(z_part$var, fixed_part$var) %in% colnames_data)], sep = "', "),
-                   "not found in 'data'"), call. = FALSE)
-    }
+    # if (sum(!(c(z_part$var, fixed_part$var) %in% colnames_data)) >= 1) {
+    #     stop(c("Variable(s) ",
+    #                paste0("'", c(z_part$var, fixed_part$var)[!(c(z_part$var, fixed_part$var) %in% colnames_data)], sep = "', "),
+    #                "not found in 'data'"), call. = FALSE)
+    # }
 
     return_list <- list(y_part = y_part, x_part = x_part, z_part = z_part,
                         w_part = w_part, fixed_part = fixed_part,
