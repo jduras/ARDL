@@ -2,9 +2,20 @@
 
 ### Documentation update
 
-* Made `.onAttach` function simpler, printing essentially the same info (issue #6, @ha0ye).
-
 * Added `BugReports` and `Video` in the `DESCRIPTION` (issue #6, @ha0ye).
+
+* Updated the references in `README` and `CITATION`.
+
+### Bug fix
+
+* `multipliers()` was giving an error when trying to estimate short-run and
+interim multipliers using a model without a constant term.
+
+### New data
+
+* Added the data used in Pesaran et al. (2001)
+
+---
 
 # ARDL 0.2.0
 
@@ -15,6 +26,8 @@ successfully replicates the results of the methodology it implements, in the
 `DESCRIPTION` and `README.Rmd` files.
 
 * Properly changed the citation info in the `CITATION` and `ardl-package.R`files.
+
+---
 
 # ARDL 0.1.1
 
